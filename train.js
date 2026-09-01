@@ -1,19 +1,33 @@
 //==================================================================================================================
+                                                // TASK B
+
+function mittaskB(taskb) {
+    let count = 0;
+    for(let i = 0; i <= taskb.length; i++) {
+        if(taskb[i] >= "0" && taskb[i] <= "9") {
+            count++;
+        }
+    }
+    console.log("MITTASKB javob:", count);
+}
+
+mittaskB("asdjakj655ehnkj6676k");
+
 
                                                     // TASK A
 
-function countLetter(harf, soz) {
-    let count = 0;
+// function countLetter(harf, soz) {
+//     let count = 0;
 
-    for (let i = 0; i < soz.length; i++) {
-        if (soz[i] === harf) {
-            count++; 
-        }
-    }
-    return count;
-}
+//     for (let i = 0; i < soz.length; i++) {
+//         if (soz[i] === harf) {
+//             count++; 
+//         }
+//     }
+//     return count;
+// }
 
-console.log(countLetter("e", "TurdalievSamandar")); 
+// console.log(countLetter("e", "TurdalievSamandar")); 
 //==================================================================================================================
 
                                                     // Asynchronous functionlarni qo'llash
