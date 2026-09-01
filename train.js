@@ -7,7 +7,7 @@ function countLetter(harf, soz) {
 
     for (let i = 0; i < soz.length; i++) {
         if (soz[i] === harf) {
-            count++;
+            count++; 
         }
     }
     return count;
