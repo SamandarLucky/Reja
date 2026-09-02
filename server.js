@@ -2,9 +2,10 @@ const http = require("http");
 const mongodb = require("mongodb");
 
 let db;
-const connectionString = "mongodb://samandar_db:Terter_123@cluster0.v7cojqa.mongodb.net/"
+const connectionString = "mongodb+srv://samandar:Terter_123@cluster0.v7cojqa.mongodb.net/?appName=Reja"
 mongodb.connect(connectionString, {useNewUrlParser: true, useUnifiedTopology: true}, (err, client) => {
-    if(err) console.log("Error on connection MongoDb");
+    if(err) {
+        console.log(err);}
     else{
         console.log("MongoDB connection succeed");
         module.exports = client;
