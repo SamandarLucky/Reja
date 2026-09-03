@@ -1,4 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+    background:rgba(217, 217, 217, 1);
+}
+
 .frame {
+
     width: 100%;
     height: 100%;
     position: relative;
@@ -6,27 +13,35 @@
     flex-direction: row;
     justify-content: center;
     background: #e5e5e5;
+
 }
 
+/* MAIN FRAME */
+
 .main_frame {
+
    position: relative;
    width: 1440px;
    height: 1312px;
    display: flex;
    flex-direction: row;
-   align-items: center;
    margin-top: 2px; 
-   background: #f7f6b9;
+   background: rgba(217, 217, 217, 1)
+
 }
 
 .main_frame .left_frame {
+
     position: relative;
     width: 305px;
     height: 1315px;
     background-color: white;
+
 }
 
+
 .main_frame .midd_frame {
+
     position: relative;
     width: 970px;
     height: 1259px;
@@ -34,21 +49,24 @@
     margin-right: 27px;
     display: flex;
     flex-direction: column;
-    
+
 }
 
+
 .main_frame .right_frame {
+
     position: relative;
     width: 108px;
     height: 1315px;
     background-color: white;
-    align-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .main_frame .left_1 {
+
     position: relative;
     width: 228px;
     height: 267px;
@@ -58,35 +76,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .main_frame .left_1 .left_1_1 {
+
     display: flex;
     flex-direction: column;
     position: relative;
     width: 156.16px;
     height: 142.53px;
     margin-bottom: 29.46px;
-}
 
-.main_frame .left_1 .left_1_3 {
-    position: relative;
-    width: 147.84px;
-    height: 25.65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 24px;
-    text-transform: capitalize;
-    font-feature-settings: 'calt' off, 'kern' off;
-    color: #767676;
 }
 
 .main_frame .left_1_2 {
+
     position: relative;
     width: 66.63px;
     height: 20.9px;
@@ -101,51 +106,113 @@
     align-items: center;
     text-transform: capitalize;
     color: #2b2b2b;
+
 }
 
+.main_frame .left_1 .left_1_3 {
+
+    position: relative;
+    width: 147.84px;
+    height: 25.65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+    color: #767676;
+
+}
+
+/* SOCIAL ICONS */
+
 .left_icons {
+
     width: 228px;
     height: 22.8px;
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 30px;
     margin-top: 18px;
+
 }
-.link_href{
+
+
+.link_href {
+
     text-decoration: none;
     color: black;
+
 }
+
+
 .icon {
+
     position: relative;
     width: 24.99px;
     height: 22.8px;
     border-radius: 50%;
     filter: drop-shadow(0 4px 4px rgba(0,0,0,.25));
     background: #FFB400;
-   
+
 }
+
 
 .icon-1 {
+
     position: relative;
-    left: 29.17%;
-    right: 27.08%;
-    margin-top: 5.86px;
+    left: 23%;
+    right: 27%;
+    margin-top: 5.85px;
+
 }
 
+/* MARGINER */
 
 .main_frame .marginer {
-border: 1.5px solid #f0f0f6;
-position: relative;
-width: 220px;
-height: 0px;
-margin-left: 40px;
-margin-bottom: 25px;
-margin-top: 39px;
+
+    border: 1.5px solid #f0f0f6;
+    position: relative;
+    width: 220px;
+    height: 0px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    margin-top: 39px;
+
+}
+
+/* Barcha .main_frame ichidagi p uchun */
+.main_frame .left_frame h3 {
+
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #2b2b2b;
+    margin: 0 0 10px 0;
+}
+
+.main_frame p {
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #767676;
+    margin: 5px 0;
+
 }
 
 .main_frame .left_2 {
+
     position: relative;
     width: 221px;
     height: 126px;
@@ -153,29 +220,283 @@ margin-top: 39px;
 
 }
 
+.main_frame .left_2 p b {
+
+    color: #2b2b2b;
+    font-weight: 500;
+    background-color: #FFB400;
+}
+
+
 .main_frame .left_3 {
+
     position: relative;
     width: 220px;
     height: 153px;
     margin-left: 45px;
     margin-top: 25px;
+
 }
 
 .main_frame .left_4 {
+
     position: relative;
     width: 220px;
     height: 153px;
     margin-left: 45px;
     margin-top: 25px;
+
 }
 
 .main_frame .left_5 {
+
     position: relative;
     width: 220px;
     height: 153px;
     margin-left: 45px;
     margin-top: 25px;
+
 }
 
-/* LEFT 1 Side CSS*/
+/* MIDDLE - INTRO */
 
+
+.main_frame .midd_frame .intro {
+
+    position: relative;
+    width: 971px;
+    height: 454px;
+    background: white;
+    padding-left: 60px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+}
+.main_frame .midd_frame .intro .right_side{
+    display: flex;
+    flex-direction: column;
+}
+.main_frame .midd_frame .intro .left_side img{
+    
+    width: 326.06px;
+    height: 446.63px;
+}
+.main_frame .midd_frame .intro button {
+  
+width: 154px;
+height: 51px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+padding: 16px 32px 16px 32px;
+border-radius: 5px;
+text-transform: capitalize;
+margin-top: 23px;
+
+
+}
+
+.main_frame .midd_frame .intro h1 {
+
+    font-family: sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #2b2b2b;
+    margin: 0 0 10px 0;
+
+}
+
+.main_frame .midd_frame .intro p {
+
+    width: 550px;
+    margin: 0;
+
+}
+
+.main_frame .midd_frame .services {
+
+    position: relative;
+    width: 970px;
+    margin-top: 30px;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin-top: 150px;
+}
+.main_frame .midd_frame .services .service_list {
+    margin-top: 50px;
+    width: 970px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.main_frame .midd_frame .services .service_list .service{
+    width: 310px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: white;
+
+
+}
+
+.main_frame .midd_frame .services .service_list h3 {
+font-family: "Inter";
+font-style: Medium;
+font-size: 18px;
+font-weight: 500;
+line-height: 123.6%;
+letter-spacing: 0%;
+text-align: left;
+text-transform: capitalize;
+}
+
+.main_frame .midd_frame .services .service_list p {
+font-family: "Inter";
+font-style: Regular;
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: capitalize;
+}
+
+.main_frame .midd_frame .services .service_list a {
+font-family: "Inter";
+font-style: Bold;
+font-size: 14px;
+font-weight: 700;
+line-height: 14px;
+letter-spacing: 0%;
+color: #FFB400;
+}
+
+.main_frame .midd_frame .services h2 {
+
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #2b2b2b;
+    margin: 0 0 15px 0;
+
+}
+
+
+/* RIGHT FRAME */
+
+.right_frame {
+    width: 100px;
+    min-width: 100px;
+    height: 100vh;
+
+    background: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+.contrast {
+    width: 56px;
+    height: 56px;
+
+    margin-top: 40px;
+    margin-bottom: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.contrast {
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contrast img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.box,
+.box_home {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.box {
+    background: #f1f1f8;
+}
+
+
+.box_home {
+    background: #ffb400;
+}
+
+
+.box img,
+.box_home img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+
+/*HOVERS*/
+.main_frame .midd_frame .service_list .service:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.box_home:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.main_frame .midd_frame .intro button:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}

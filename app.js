@@ -6,6 +6,8 @@ const app = express();
 
 // MongoDB connect
 const db = require("./server").db();
+// USER JSON
+const user = require("./database/user.json");
 
 // 1: Kirish codlari
 app.use(express.static("public"));
@@ -33,9 +35,9 @@ app.post("/create-item", (req, res) => {
         }
     });
 })
-// app.get("/author", function (req, res) {
-//     res.render("author", {user: user});
-// });
+app.get("/author", function (req, res) {
+    res.render("author", {user: user});
+});
 app.get("/", function (req, res) {
     console.log('user entered /');
     db.collection("plans").find().toArray((err, data) => {
