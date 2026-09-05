@@ -12,6 +12,8 @@ function itemTemplate(item) {
 
 let createField = document.getElementById("create-field");
 
+// create item oper
+
 document.getElementById("create-form").addEventListener("submit", function (e) {
     e.preventDefault();
     
@@ -27,8 +29,9 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
     });
 });
 
+// delete oper
+
 document.addEventListener("click", function(e) {
-    // delete oper
     console.log(e.target);
     if(e.target.classList.contains("delete-me")) {
         if(confirm("Aniq delete qilmoqchimisz?")) {
@@ -43,6 +46,8 @@ document.addEventListener("click", function(e) {
             });
         }
     }
+
+    
     // edit oper
     if(e.target.classList.contains("edit-me")) {
        let userInput = prompt("O'zgartirish kiriting", e.target.parentElement.parentElement.querySelector(".item-text").innerHTML);

@@ -1,17 +1,54 @@
 //==================================================================================================================
-                                                // TASK B
-
-function mittaskB(taskb) {
-    let count = 0;
-    for(let i = 0; i <= taskb.length; i++) {
-        if(taskb[i] >= "0" && taskb[i] <= "9") {
-            count++;
-        }
+                                                //TASK C
+                                                
+class Shop {
+    constructor(non, osh, Dena) {
+        this.non = non;
+        this.osh = osh;
+        this.Dena = Dena;
     }
-    console.log("MITTASKB javob:", count);
+
+    qoldiq() {
+        console.log(
+            `Hozir shopda ${this.non} ta non, ${this.osh} ta osh, ${this.Dena} ta Dena bor`
+        );
+    }
+
+    sotish(tovar, soni) {
+        this[tovar] -= soni;
+        console.log(`${soni} ta ${tovar} sotildi`);
+    }
+
+    qabul(tovar, soni) {
+        this[tovar] += soni;
+        console.log(`${soni} ta ${tovar} zakaz qabul qilindi`);
+    }
 }
 
-mittaskB("asdjakj655ehnkj6676k");
+const shop = new Shop(15, 25, 50);
+shop.qoldiq();
+shop.sotish("non", 8);
+shop.sotish("osh", 10);
+shop.sotish("Dena", 24)
+shop.qabul("Dena", 4);
+
+shop.qoldiq();
+
+
+//==================================================================================================================
+                                                // TASK B
+
+// function mittaskB(taskb) {
+//     let count = 0;
+//     for(let i = 0; i <= taskb.length; i++) {
+//         if(taskb[i] >= "0" && taskb[i] <= "9") {
+//             count++;
+//         }
+//     }
+//     console.log("MITTASKB javob:", count);
+// }
+
+// mittaskB("asdjakj655ehnkj6676k");
 
 
                                                     // TASK A
