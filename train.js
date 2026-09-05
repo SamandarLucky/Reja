@@ -10,7 +10,7 @@ class Shop {
 
     qoldiq() {
         console.log(
-            `Hozir shopda ${this.non} ta non, ${this.osh} ta osh, ${this.Dena} ta Dena bor`
+            `Hozir ${this.vaqt()} shopda ${this.non} ta non, ${this.osh} ta osh, ${this.Dena} ta Dena bor`
         );
     }
 
@@ -23,13 +23,19 @@ class Shop {
         this[tovar] += soni;
         console.log(`${soni} ta ${tovar} zakaz qabul qilindi`);
     }
+
+    vaqt() {
+        let hozir = new Date();
+        return hozir.toLocaleTimeString();
+    }
 }
 
 const shop = new Shop(15, 25, 50);
+
 shop.qoldiq();
 shop.sotish("non", 8);
 shop.sotish("osh", 10);
-shop.sotish("Dena", 24)
+shop.sotish("Dena", 24);
 shop.qabul("Dena", 4);
 
 shop.qoldiq();
