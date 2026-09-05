@@ -30,12 +30,31 @@ app.post("/create-item", (req, res) => {
     });
 });
 
-app.post("/delete-item", (req, res) => {
- const id = req.body.id;
- db.collection("plans").deleteOne({_id: new mongodb.ObjectId(id)}, function(err, data) {
-    res.json({state: "success"});
- });
+// app.post("/delete-item", (req, res) => {
+//  const id = req.body.id;
+//  db.collection("plans").deleteOne({_id: new mongodb.ObjectId(id)}, function(err, data) {
+//     res.json({state: "success"});
+//  });
  
+// });
+
+app.post("/delete-item", (req, res) => {
+    console.log("DELETE ID:", req.body.id);
+
+    const id = req.body.id;
+
+    db.collection("plans").deleteOne(
+        { _id: new mongodb.ObjectId(id) },
+        (err, data) => {
+            if (err) {
+                console.log("DELETE ERROR:", err);
+                return res.status(400).json({ state: "error" });
+            }
+
+            console.log("DELETE SUCCESS:", data);
+            res.json({ state: "success" });
+        }
+    );
 });
 
 

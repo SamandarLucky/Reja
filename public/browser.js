@@ -2,7 +2,7 @@ console.log("FrontEnd JS ishga tushdi!");
 
 function itemTemplate(item) {
     return `<li class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
-                <span class="item-text">${item.reja}></span>
+                <span class="item-text">${item.reja}</span>
                 <div>
                     <button data-id="${item._id}" class="edit-me btn btn-secondary btn-sm mr-1">Ozgartirish</button>
                     <button data-id="${item._id}" class="delete-me btn btn-danger btn-sm">Delete</button>
@@ -27,29 +27,6 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
     });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 document.addEventListener("click", function(e) {
     // delete oper
     console.log(e.target);
@@ -59,7 +36,7 @@ document.addEventListener("click", function(e) {
             .post("/delete-item", {id: e.target.getAttribute("data-id")})
             .then((response) => {
                 console.log(response.data);
-                e.target.parentElement.remove();
+               e.target.parentElement.parentElement.remove();
             })
             .catch((err) => {
                 console.log("Iltimos qaytadan harakat qiling!");
